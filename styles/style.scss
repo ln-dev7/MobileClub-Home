@@ -99,7 +99,7 @@
     align-items: center;
   }
   &-left {
-      margin-right: -100px;
+    margin-right: -100px;
     img:nth-child(1) {
     }
     img:nth-child(2) {
@@ -174,6 +174,104 @@
       background: $rose;
       background: linear-gradient(#ffffffb9, $rose);
       cursor: pointer;
+    }
+  }
+}
+
+.avantages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .cards {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //background: #000;
+  }
+  &-title {
+    width: 100%;
+    font-family: "semibold", sans-serif;
+    font-weight: 1000;
+    font-size: 160px;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  .align{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      &:nth-child(2n){
+          justify-content: flex-start;
+      }
+  }
+  &-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem 0;
+    //background: rgb(190, 113, 113);
+    margin-right: 0;
+    img {
+      width: 392px;
+      height: 392px;
+    }
+  }
+  .text {
+    width: 420px;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    h1 {
+      font-size: 90px;
+    }
+    h2 {
+      font-size: 60px;
+    }
+    h3 {
+      font-size: 23px;
+    }
+  }
+}
+
+.catalogue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  h1 {
+    width: 100%;
+    font-family: "semibold", sans-serif;
+    font-weight: 1000;
+    font-size: 160px;
+    text-align: center;
+    margin: 3rem 0;
+  }
+  .cards {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 36px;
+    }
+    button {
+      font-size: 20px;
+      padding: 15px 25px;
+      border-radius: 40px;
+      border: none;
+      box-shadow: 1px 1px 5px #00000038;
+      background: $rose;
+      background: linear-gradient(#ffffffb9, $rose);
+      cursor: pointer;
+      margin: 2rem 0;
     }
   }
 }

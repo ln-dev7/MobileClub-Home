@@ -46,6 +46,7 @@ li {
 
 body {
   overflow-x: hidden;
+  background: #0e0075;
 }
 
 .code-promo {
@@ -216,4 +217,100 @@ body {
   background: #ff006e;
   background: linear-gradient(#ffffffb9, #ff006e);
   cursor: pointer;
+}
+
+.avantages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.avantages .cards {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.avantages-title {
+  width: 100%;
+  font-family: "semibold", sans-serif;
+  font-weight: 1000;
+  font-size: 160px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.avantages .align {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.avantages .align:nth-child(2n) {
+  justify-content: flex-start;
+}
+.avantages-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem 0;
+  margin-right: 0;
+}
+.avantages-card img {
+  width: 392px;
+  height: 392px;
+}
+.avantages .text {
+  width: 420px;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.avantages .text h1 {
+  font-size: 90px;
+}
+.avantages .text h2 {
+  font-size: 60px;
+}
+.avantages .text h3 {
+  font-size: 23px;
+}
+
+.catalogue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.catalogue h1 {
+  width: 100%;
+  font-family: "semibold", sans-serif;
+  font-weight: 1000;
+  font-size: 160px;
+  text-align: center;
+  margin: 3rem 0;
+}
+.catalogue .cards {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.catalogue .cards h2 {
+  font-size: 36px;
+}
+.catalogue .cards button {
+  font-size: 20px;
+  padding: 15px 25px;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 1px 1px 5px #00000038;
+  background: #ff006e;
+  background: linear-gradient(#ffffffb9, #ff006e);
+  cursor: pointer;
+  margin: 2rem 0;
 }
