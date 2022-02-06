@@ -44,6 +44,10 @@ li {
   list-style: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .code-promo {
   background: #ff006e;
   display: flex;
@@ -128,18 +132,39 @@ li {
   background: #0e0075;
 }
 .header .cards {
+  margin-top: 50px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
+.header-left, .header-right {
+  margin-top: 50px;
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-left {
+  margin-right: -100px;
+}
+.header-left img:nth-child(2) {
+  margin-top: -150px;
+  margin-right: -250px;
+}
+.header-right img:nth-child(2) {
+  margin-top: -150px;
+  margin-left: -280px;
+}
 .header-center {
-  width: 100%;
+  width: 850px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .header-center h1 {
+  width: 100%;
   font-family: "semibold", sans-serif;
   font-weight: 1000;
   font-size: 110px;
@@ -168,18 +193,17 @@ li {
   font-family: "regular", sans-serif;
 }
 .header-center h3 .number {
-  font-family: "regular", sans-serif;
+  font-family: "semioold", sans-serif;
   position: relative;
   font-size: 60px;
   color: #ff006e;
 }
 .header-center h3 .expo {
-  font-family: "regular", sans-serif;
+  font-family: "semibold", sans-serif;
   position: absolute;
-  background: #000;
   width: 100px;
   top: 0;
-  right: 0;
+  right: -100px;
   font-size: 30px;
   color: #ff006e;
 }
@@ -190,4 +214,6 @@ li {
   border: none;
   box-shadow: 1px 1px 5px #00000038;
   background: #ff006e;
+  background: linear-gradient(#ffffffb9, #ff006e);
+  cursor: pointer;
 }
