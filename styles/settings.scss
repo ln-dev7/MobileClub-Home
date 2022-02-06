@@ -1,0 +1,55 @@
+// Google font
+@font-face {
+    font-family: 'bold';
+    src: url('fonts/boing_blod.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'medium';
+    src: url('fonts/boing_medium.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'regular';
+    src: url('fonts/boing_regular.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'semibold';
+    src: url('fonts/boing_semibold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+// Couleurs
+
+$bleu: rgb(14 0 117);
+$bleuLight: rgb(96 84 186);
+$rose: rgb(255 0 110);
+$blanc: #fff;
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: 'medium' ,sans-serif;
+  font-size: 18px;
+  color: $blanc;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+

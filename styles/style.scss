@@ -1,0 +1,150 @@
+@import "settings";
+
+.code-promo {
+  background: $rose;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .cards {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin-right: 15px;
+  }
+  p {
+    color: $blanc;
+    font-family: "semibold", sans-serif;
+  }
+  img {
+    cursor: pointer;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bleu;
+  .cards {
+    width: 82.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      padding: 0 20px;
+      a {
+        position: relative;
+        padding-bottom: 5px;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          height: 2px;
+          width: 100%;
+          transform: scaleX(0);
+          background: $blanc;
+          transition: transform 0.3s ease;
+        }
+        &:hover {
+          background: rgba($color: $bleu, $alpha: 0.03);
+          &::before {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+    .member {
+      background: $bleuLight;
+      border-radius: 40px;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: $bleu;
+  .cards {
+    //width: 82.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-center {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    h1 {
+      font-family: "semibold", sans-serif;
+      font-weight: 1000;
+      font-size: 110px;
+      text-align: center;
+      span {
+        font-family: "semibold", sans-serif;
+        font-weight: 1000;
+        font-size: 110px;
+        position: relative;
+        color: $rose;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 10px;
+          background: $blanc;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    h3 {
+        margin: 2rem 0;
+      font-size: 30px;
+      font-family: "regular", sans-serif;
+      .number {
+        font-family: "regular", sans-serif;
+        position: relative;
+        font-size: 60px;
+        color: $rose;
+      }
+      .expo {
+        font-family: "regular", sans-serif;
+        position: absolute;
+        background: #000;
+        width: 100px;
+        top: 0;
+        right: 0;
+        font-size: 30px;
+        color: $rose;
+      }
+    }
+    button {
+      font-size: 20px;
+      padding: 15px 25px;
+      border-radius: 40px;
+      border: none;
+      box-shadow: 1px 1px 5px #00000038;
+      background: $rose;
+    }
+  }
+}
